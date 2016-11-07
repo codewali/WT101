@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Color Changing Game (Yeah, sure. Game. Like Life. Game.)</title>
+	<link href="assets/stylesheets/color.css" rel="stylesheet">
+	<link href="assets/stylesheets/font-awesome.css" rel="stylesheet">
+</head>
+
+<body id="body">
+	<div class="navBar">
+    <a href="unlimited.html"><div class="item"> Custom  </div></a>
+    <a href="color.html"><div class="item"> Series </div></a>
+    <a href="colorGuessv2.php"><div class="item"> Guess </div></a>
+
+  </div>
+	<div id="mySidenav" class="sidenav">
+		<i class="fa fa-close closebtn" style="height:11.11%;" onclick="closeNav()"></i>
+		<div class="choiceSquare" id="2" onclick="generate(this.id)"><span>ONE</span></div>
+		<div class="choiceSquare" id="3" onclick="generate(this.id)"><span>TWO</span></div>
+		<div class="choiceSquare" id="4" onclick="generate(this.id)"><span>THREE</span></div>
+		<div class="choiceSquare" id="5" onclick="generate(this.id)"><span>FOUR</span></div>
+		<div class="choiceSquare" id="6" onclick="generate(this.id)"><span>FIVE</span></div>
+		<div class="choiceSquare" id="7" onclick="generate(this.id)"><span>SIX</span></div>
+		<div class="choiceSquare" id="8" onclick="generate(this.id)"><span>SEVEN</span></div>
+		<div class="choiceSquare" id="9" onclick="generate(this.id)"><span>EIGHT</span></div>
+	</div>
+
+
+<!--
+	<div id="amaze">
+		<i class="fa fa-2x fa-bars" id="hamburger" onclick="openNav()"></i>
+	</div> -->
+	<div class="stripe">
+		<i class="fa fa-2x fa-bars" id="hamburger" onclick="openNav()"></i>
+
+		<p id="sElem">The Correct color is <br>
+			<span id="colorid"> <b>This</b> </span> </p>
+	</div>
+
+	<div class="game">
+
+	</div>
+
+	<script src="assets/js/color.js"></script>
+</body>
+
+</html>
