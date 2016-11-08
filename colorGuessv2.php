@@ -28,31 +28,37 @@
     $jsonString = json_encode($arr);
 ?>
 <!--  HTML STARTS HERE -->
+<!DOCTYPE html>
 <html>
   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
   <head>
     <meta charset="utf-8">
-    <title>Testing Server</title>
+    <title>Guess The Color!</title>
     <link href="assets/stylesheets/colorGuess.css" rel="stylesheet">
+    <link href="assets/stylesheets/font-awesome.css" rel="stylesheet">
+
   </head>
 
-<!DOCTYPE html>
-  </body>
-</html>
   <body>
     <div class="container">
       <div class="navBar">
+        <a href="index.html">
+          <div class="item"> <i class="fa fa-home"></i> </div></a>
         <a href="unlimited.html"><div class="item"> Custom  </div></a>
         <a href="color.html"><div class="item"> Series </div></a>
         <a href="colorGuessv2.php"><div class="item"> Guess </div></a>
 
+
       </div>
       <div class="stripe">
 
-        <h1> Which <span id="col">&lt;color&gt;</span> is this? </h1>
+        <h1 id="textcon"> Which <span id="col">&lt;color&gt;</span> is this? </h1>
         <button id="hint"> &lt;Hint&gt; </button>
         <button id="reset">&lt;Reset&gt;</button>
 
+      </div>
+      <div class="instr" style="height:3%;width:100%;font-family:stellarlight;text-align:center;background:rgba(0,0,0,0.5);font-size:22px;">
+        <p> <i>If your answer is right, the division above changes to green and reloads. If your answer is wrong, the division changed to red </i></p>
       </div>
 
       <div class="game">
@@ -61,6 +67,7 @@
         </div>
       </div>
     </div>
+
 
 
     <!--  Javascript Starts here -->
@@ -207,9 +214,12 @@
 
 
     function recolor(){
-      console.log("REcoloring");
+      // console.log("REcoloring");
       console.log(correct)
+      document.querySelector('#textcon').textContent = "CORRECT!!";
+
       stripe.style.background = arrayOfColors[0];
+
     }
 
 

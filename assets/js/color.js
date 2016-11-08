@@ -4,7 +4,7 @@ var strip = document.querySelector('.stripe');
 var correctness = 1;
 var isSuc = 2;
 
-body.style.background = "#00B8D4";
+body.style.background = "#F57F17";
 b.addEventListener("load", generate(2));
 
 function generate(num) {
